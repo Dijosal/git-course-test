@@ -1,0 +1,7 @@
+-Con Concat "variable.concat(argumento)"
+es un metodo de cadena, que funciona con cadenas porque de lo contrario
+da error
+
+-Con backtiks y la variable entre ${}
+la variable entre ${} solamente funciona si esta dentro de backtiks ``
+que son las tildes sin vocal, presiona la tilde y dale espacio
