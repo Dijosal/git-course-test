@@ -1,3 +1,2 @@
-const rangoEtario = document.querySelector(".rangoEtario");
+const titulo = document.querySelector(".titulo");
 
-valorDelAtributo = rangoEtario.removeAttribute("type");
