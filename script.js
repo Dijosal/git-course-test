@@ -1,31 +1,28 @@
-const contenedor = document.querySelector(".contenedor");
+const div = document.querySelector(".div-3");
 
-// firstElementChild
-const primerHijo = contenedor.firstElementChild;
+// .closest(".classSelector") - busca el contenedor mas cercano que
+// contenga ese elemento especificado
+console.log(div.closest(".div"));
 
-console.log(primerHijo);
+// codigo html
+// <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//     <meta charset="UTF-8">
+//     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <link rel="stylesheet" href="style.css">
+//     <title>Historia de Cofla</title>
+// </head>
+// <body>
+//     <div class="div">
+//         DIV 1
+//         <div class="div">
+//         DIV 2
+//             <div class="div-3"></div>
+//         </div>
+//     </div>
 
-// lastElementChild
-const ultimoHijo = contenedor.lastElementChild;
-
-console.log(ultimoHijo);
-
-// childNodes - devuelve todos los nodos hijos, no es un array, es un
-// node list
-const hijos = contenedor.childNodes;
-
-console.log(hijos);
-
-// pero se puede recorrer con un forEach
-hijos.forEach(hijo => console.log(hijo));
-
-// children - devuelve los hijos, pero solo las etiquetas HTML
-// pero no se puede recorrer con un forEach sino con un For of
-const hijos2 = contenedor.children;
-
-
-console.log("");
-console.log(hijos2);
-for (hijo2 of hijos2) {
-    console.log(hijo2);
-}
+// <script src="script.js"></script>
+// </body>
+// </html>
